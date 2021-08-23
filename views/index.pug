@@ -1,0 +1,59 @@
+doctype html
+html
+  head
+    title Dipti Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul 
+            div#logo
+                img(src="/static/img/logo.png", alt="")
+                | DDA
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class info]
+            li #[a(href="/") Contact]
+
+    section#introSection 
+        div Welcome to Deps's Dance Academy 
+        div.small Eat Dance Sleep Repeat
+
+    section#visionSection 
+        h2 Our Vision
+        div.card
+            h3 Dance perfection 
+            div.card-box
+                div.card-img
+                    img(src="/static/img/1.png")
+                div.card-content
+                    p This is the best dance academy of gujarat!!      
+        div.card
+            h3 Dance the way you like  
+            div.card-box
+                div.card-img
+                    img(src="/static/img/3.png")
+                div.card-content
+                    p This is the best dance academy of gujarat!!    
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/4.jpg")
+                div.card-content
+                    p This is the best dance academy of gujarat!!  
+
+    section#sponserSection 
+        h2 Our sponsers
+        div#sponsers
+            img(src="/static/img/fb.jpg", alt="sponser image", class="spImage")
+            img(src="/static/img/twitter.png", alt="sponser image", class="spImage")
+            img(src="/static/img/skype.png", alt="sponser image", class="spImage")
+            img(src="/static/img/ms.png", alt="sponser image", class="spImage")
+
+    footer#footer 
+        | Copyright 2021 diptidanceacademy.com  | All rights reserved
+
+    script
+      include ../static/index.js
